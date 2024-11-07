@@ -13,6 +13,11 @@ const todoSchema = mongoose.Schema({
     isCompleted : {
         type : Boolean,
         default : false
+    },
+
+    createdAt: {
+        type : Date,
+        default : Date.now,
     }
 })
 
